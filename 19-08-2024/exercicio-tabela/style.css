@@ -1,0 +1,13 @@
+body {
+    font-size: 26px;
+    font-family: 'roboto', sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+tr {
+    height: 50px;
+}
