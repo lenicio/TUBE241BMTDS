@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Formulário</h1>
+
+    <form>
+        <label for="input-cpf">CPF: </label>
+        <input type="text" name="cpf" id="input-cpf" placeholder="Digite aqui..." required>
+        <br>
+
+            <label for="input-senha">Senha: </label>
+            <input type="password" name="senha" id="input-senha" placeholder="Digite aqui..." required>
+            <br>
+
+        <label for="input-idade">Idade</label>
+        <input type="number" name="idade" id="input-idade" max="10">
+        <br>
+
+        <span>Genero</span>
+        <input type="radio" name="genero"> Masculino
+        <input type="radio" name="genero"> Feminino
+        <input type="radio" name="genero"> Não Declarado
+        <br>
+
+        <span>Turno</span>
+        <input type="radio" name="turno"> Manhã
+        <input type="radio" name="turno"> Tarde
+        <input type="radio" name="turno"> Noite
+        <br>
+
+        <span>Estilo Musical</span>
+        <input type="checkbox" name="input-estilo-musical">Rock
+        <input type="checkbox" name="input-estilo-musical">Sertanejo Universitário
+        <input type="checkbox" name="input-estilo-musical">Funk Proibidão
+        <br>
+
+        <span>Escreva sua mensagem: </span>
+        <textarea name="input-mensagel"></textarea>
+        <br>
+
+        <span>Selecione o estado: </span>
+        <select>
+            <option value="">MG</option>
+            <option value="">SP</option>
+            <option value="">PB</option>
+            <option value="">BA</option>
+        </select>
+
+        <br>
+        <button type="submit">Enviar Formulário</button>
+    </form>
+
+</body>
+</html>
