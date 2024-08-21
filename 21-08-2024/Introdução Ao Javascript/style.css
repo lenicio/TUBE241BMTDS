@@ -1,3 +1,13 @@
+body {
+    font-family: sans-serif;
+    font-size: 26px;
+}
+
 h1 {
     color: #392269;
+}
+
+input {
+    width: 200px; /*Largura*/
+    height: 30px; /*Altura*/
 }
