@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Produtos</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <a href="./../index.html">Voltar para listagem</a>
+    <h1>Cadastro de Produtos</h1>
+
+    <!-- Formulário de Cadastro de Produtos -->
+    <form id="form-produto">
+        <label for="nome-produto">Nome do Produto:</label>
+        <input type="text" id="nome-produto" name="nome-produto" placeholder="Digite o nome do produto" required>
+        <br>
+
+        <label for="quantidade">Quantidade:</label>
+        <input type="number" id="quantidade" name="quantidade" placeholder="Digite a quantidade" required>
+        <br>
+
+        <label for="categoria">Categoria:</label>
+        <select id="categoria" name="categoria">
+            <option value="eletronicos">Eletrônicos</option>
+            <option value="roupas">Roupas</option>
+            <option value="alimentos">Alimentos</option>
+        </select>
+        <br>
+
+        <span>Disponibilidade:</span>
+        <label><input type="radio" name="disponibilidade" value="em-estoque"> Em Estoque</label>
+        <label><input type="radio" name="disponibilidade" value="esgotado"> Esgotado</label>
+        <br>
+
+        <label for="descricao">Descrição:</label>
+        <textarea id="descricao" name="descricao" placeholder="Digite a descrição do produto"></textarea>
+        <br>
+
+        <button type="submit">Cadastrar Produto</button>
+    </form>
+
+    <!-- Tabela de Produtos Cadastrados -->
+    <h2>Produtos Cadastrados</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nome do Produto</th>
+                <th>Quantidade</th>
+                <th>Categoria</th>
+                <th>Disponibilidade</th>
+                <th>Descrição</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Smartphone XYZ</td>
+                <td class="quantidade">25</td>
+                <td rowspan="2">Eletrônicos</td>
+                <td class="em-estoque">Em Estoque</td>
+                <td><span class="negrito">Smartphone</span> de última geração com 128GB de armazenamento.</td>
+            </tr>
+            <tr>
+                <td>Fone de Ouvido Bluetooth</td>
+                <td class="quantidade">15</td>
+                <td id="esgotado">Esgotado</td>
+                <td>Fone de ouvido sem fio com cancelamento de ruído.</td>
+            </tr>
+            <tr>
+                <td>Camiseta Branca</td>
+                <td class="quantidade">50</td>
+                <td>Roupas</td>
+                <td class="em-estoque">Em Estoque</td>
+                <td>Camiseta básica de algodão, disponível em todos os tamanhos.</td>
+            </tr>
+            <tr>
+                <td>Arroz Integral</td>
+                <td class="quantidade">200</td>
+                <td>Alimentos</td>
+                <td class="em-estoque">Em Estoque</td>
+                <td>Pacote de 5kg de arroz integral orgânico.</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5">Total de Produtos Cadastrados: <span class="negrito">4</span></td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>

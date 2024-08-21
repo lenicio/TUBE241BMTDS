@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <a href="./../index.html">Voltar para listagem</a>
     <h1>Formulário</h1>
 
     <form>
@@ -22,25 +23,25 @@
         <br>
 
         <span>Genero</span>
-        <input type="radio" name="genero"> Masculino
-        <input type="radio" name="genero"> Feminino
-        <input type="radio" name="genero"> Não Declarado
+        <input type="radio" name="genero" id="masculino"> <label for="masculino">Masculino</label>
+        <input type="radio" name="genero" id="feminino"> <label for="feminino">Feminino</label>
+        <input type="radio" name="genero" id="outros"> <label for="outros">Não declarado</label>
         <br>
 
         <span>Turno</span>
-        <input type="radio" name="turno"> Manhã
-        <input type="radio" name="turno"> Tarde
-        <input type="radio" name="turno"> Noite
+        <input type="radio" name="turno" id="manha"> <label for="manha">Manhã</label>
+        <input type="radio" name="turno" id="tarde"> <label for="tarde">Tarde</label>
+        <input type="radio" name="turno" id="noite"> <label for="noite">Noite</label>
         <br>
 
         <span>Estilo Musical</span>
-        <input type="checkbox" name="input-estilo-musical">Rock
-        <input type="checkbox" name="input-estilo-musical">Sertanejo Universitário
-        <input type="checkbox" name="input-estilo-musical">Funk Proibidão
+        <input type="checkbox" name="input-estilo-musical" id="rock"><label for="rock">Rock</label> 
+        <input type="checkbox" name="input-estilo-musical" id="sertanejo"><label for="sertanejo">Sertanejo Universitário</label>
+        <input type="checkbox" name="input-estilo-musical" id="funk"><label for="funk">Funk Proibidão</label>
         <br>
 
-        <span>Escreva sua mensagem: </span>
-        <textarea name="input-mensagel"></textarea>
+        <label for="input-mensagem">Escreva sua mensagem: </label>
+        <textarea name="input-mensagel" id="input-mensagem"></textarea>
         <br>
 
         <span>Selecione o estado: </span>
