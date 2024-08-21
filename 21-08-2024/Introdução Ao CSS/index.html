@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+</head>
+<body>
+    <h1>Verificador de Idade</h1>
+    <input type="number" id="age-input" placeholder="Digite sua idade">
+    <button id="check-age-button">Verificar Idade</button>
+    <p id="result-message"></p>
+
+    <script>
+        document.getElementById('check-age-button').addEventListener('click', function() {
+            const ageInput = document.getElementById('age-input');
+            const age = parseInt(ageInput.value);
+            const resultMessage = document.getElementById('result-message');
+
+            if (!isNaN(age)) {
+                if (age >= 18) {
+                    resultMessage.textContent = 'Você é maior de idade.';
+                } else {
+                    resultMessage.textContent = 'Você é menor de idade.';
+                }
+            } else {
+                resultMessage.textContent = 'Por favor, insira uma idade válida.';
+            }
+        });
+    </script>
+</body>
+</html>

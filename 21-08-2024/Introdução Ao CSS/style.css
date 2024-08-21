@@ -1,0 +1,56 @@
+* {
+  width: ;
+  height: ;
+  margin: ;
+  padding: ;
+  border: ;
+  background: ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.vermelho {
+  height: 30px; /* Altura*/
+  width: 200px; /* Largura */
+  margin: 0px 10px 0px 10px;
+
+  background: black;
+  border: 2px solid blue;
+}
+
+.preto {
+  height: 30px; /* Altura*/
+  width: 200px; /* Largura */
+  margin: 0px 10px 0px 10px;
+
+  background: red;
+  border: 2px solid blue;
+}

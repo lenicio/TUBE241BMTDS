@@ -1,25 +1,9 @@
-// Inclua um novo campo onde o usuário informe a idade, e exiba junto
-// a listagem.
-
-let nomes = [];
-
 document.getElementById('btn-enviar')
 .addEventListener('click', function(e) {
-  e.preventDefault(); // Anula o comportamento padrão de submissão do formulário
+  e.preventDefault(); // Impede a pag de recarregar ao enviar o formulário
+
+  let nome = document.getElementById('input-nome').value;
+
+  document.getElementById('nome').innerText = `O nome digitado foi: ${nome}`;
   
-  nomes.push(document.getElementById('input-nome').value);
-  document.getElementById('input-nome').value = "";
-
-  exibirLista();
-});
-
-
-function exibirLista() {
-  let linhas = "";
-
-  nomes.forEach((nome) => {
-    linhas += `<li>${nome}</li>`
-  });
-
-  document.getElementById('lista').innerHTML = linhas;
-}
+})
