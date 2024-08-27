@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-body {
+* {
   margin: 0;
   padding: 0;
   font-family: 'Roboto';
@@ -23,4 +23,40 @@ body {
   border: 3px solid #DFDDEC;
   border-radius: 20px;
   background: #eae7ff;
+}
+
+.curso h2 {
+  color: #593493;
+}
+
+.curso p {
+  color: #555;
+}
+
+.media-salarial {
+  font-weight: bold;
+}
+
+.curso p:first-of-type {
+  margin: 20px 0px 14px 0px;
+}
+
+.curso p span {
+  font-weight: bold;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: #E27203;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 14px;
+}
+
+a:hover {
+  cursor: default;
+  background: #dc7f22;
 }
