@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: red;
+}
+
+
+h1, h2, p, div {
+  border: 1px solid red;
+  padding: 5px;
+  text-align: center;
+  margin: 20px 5px;
+}
+
+span, strong, button, a {
+  border: 1px solid blue;
+  margin: 0 auto;
+}
+
+a, button {
+  color: inherit;
+}
+
+.esquerda {
+  text-align: left;
+}
+
+.direita {
+  text-align: right;
+}
