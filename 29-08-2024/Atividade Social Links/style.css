@@ -1,0 +1,22 @@
+:root {
+  --roxo-proz: #392269;
+}
+
+
+div {
+  border: 1px solid red;
+  height: 100px;
+  margin: 20px;
+}
+
+.cor-1 {
+  background-color: var(--roxo-proz);
+}
+
+.cor-3 {
+  background-color: var(--roxo-proz);
+}
+
+.cor-5 {
+  background-color: var(--roxo-proz);
+}
