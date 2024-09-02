@@ -7,9 +7,11 @@ body {
 
 main {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 270px);
   gap: 5px;
+  justify-content: center;
 }
+
 
 div {
   display: grid;
@@ -32,6 +34,7 @@ span {
   background: rgb(255, 255, 0);
   padding: 2px;
   border-radius: 5px;
+  justify-self: start;
 }
 
 a {
