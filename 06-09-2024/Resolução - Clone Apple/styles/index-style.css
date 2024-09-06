@@ -1,0 +1,117 @@
+@font-face {
+  font-family: 'SF Pro regular';
+  src: url('./../assets/fonts/SFPRODISPLAYREGULAR.OTF');
+}
+
+:root {
+  --cor-preto: #000;
+  --cor-branco: #fff;
+  --cor-cinza-escuro: #1D1D1F;
+  --cor-azul-claro: #0071E3;
+  --cor-cinza-claro: #eee;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  /* box-shadow: inset 0 0 0 1px red; */
+}
+
+
+body {
+  font-family: 'SF Pro regular';
+}
+
+header {
+  background: var(--cor-cinza-escuro);
+}
+
+.logo-header {
+  display: block;
+  width: 20px;
+  padding: 5px 25px;
+}
+
+/* Inicio do design do banner */
+.banner > h1 {
+  font-size: 48px;
+}
+
+.banner > p {
+  font-size: 24px;
+}
+
+.banner {
+  background: var(--cor-preto);
+  color: var(--cor-branco);
+  text-align: center;
+}
+
+.banner-paragrafo {
+  margin: 10px 0 5px 0;
+}
+
+.banner-imagem {
+  display: block;
+  margin: 0 auto;
+  width: 400px;
+}
+
+.banner-botoes {
+  margin-bottom: 20px;
+}
+
+.botao {
+  display: inline-block;
+  font-size: 18px;
+  border: 1px solid var(--cor-azul-claro);
+  padding: 5px 10px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.botao-ativo {
+  background: var(--cor-azul-claro);
+  color: var(--cor-branco);
+}
+
+.botao-comum {
+  color: var(--cor-azul-claro);
+}
+
+.conteudo {
+  padding: 20px 60px;
+  margin: 20px 0;
+  background: var(--cor-cinza-claro);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, fit-content(100%));
+  justify-content: center;
+  gap: 60px
+}
+
+.phone {
+  text-align: center;
+}
+
+.phone > h2 {
+  margin: 10px;
+} 
+
+.phone > p {
+  margin: 10px;
+  font-weight: bold;
+}
+
+.phone-foto {
+  display: block ;
+}
+
+.botao-comprar {
+  text-decoration: none;
+  color: var(--cor-azul-claro);
+  margin-left: 10px;
+}
+
