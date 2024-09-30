@@ -67,3 +67,43 @@ VALUES
 ('Caio Teixeira', 'Fortaleza', 'caio.teixeira@example.com', 130.90, '(85) 98765-1111', '1996-07-20', 'Masculino', 'Ativo', '789.012.345-61'),
 ('Daniela Souza', 'Rio de Janeiro', 'daniela.souza@example.com', 180.30, '(21) 91234-0000', '1991-01-11', 'Feminino', 'Inativo', '890.123.456-72'),
 ('Eduardo Gonçalves', 'São Paulo', 'eduardo.goncalves@example.com', 220.50, '(11) 99888-5678', '1992-03-03', 'Masculino', 'Ativo', '901.234.567-83');
+
+
+CREATE TABLE cidades (
+	id INT NOT NULL AUTO_INCREMENT,
+    cidade VARCHAR(100) NOT NULL,
+    estado VARCHAR(100) NOT NULL,
+    uf CHAR(2) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+INSERT INTO cidades (cidade, estado, uf) VALUES
+('Rio Branco', 'Acre', 'AC'),
+('Maceió', 'Alagoas', 'AL'),
+('Macapá', 'Amapá', 'AP'),
+('Manaus', 'Amazonas', 'AM'),
+('Salvador', 'Bahia', 'BA'),
+('Fortaleza', 'Ceará', 'CE'),
+('Brasília', 'Distrito Federal', 'DF'),
+('Vitória', 'Espírito Santo', 'ES'),
+('Goiânia', 'Goiás', 'GO'),
+('São Luís', 'Maranhão', 'MA'),
+('Cuiabá', 'Mato Grosso', 'MT'),
+('Campo Grande', 'Mato Grosso do Sul', 'MS'),
+('Belo Horizonte', 'Minas Gerais', 'MG'),
+('Belém', 'Pará', 'PA'),
+('João Pessoa', 'Paraíba', 'PB'),
+('Curitiba', 'Paraná', 'PR'),
+('Recife', 'Pernambuco', 'PE'),
+('Teresina', 'Piauí', 'PI'),
+('Natal', 'Rio Grande do Norte', 'RN'),
+('Porto Alegre', 'Rio Grande do Sul', 'RS'),
+('Porto Velho', 'Rondônia', 'RO'),
+('Boa Vista', 'Roraima', 'RR'),
+('Florianópolis', 'Santa Catarina', 'SC'),
+('São Paulo', 'São Paulo', 'SP'),
+('Rio de Janeiro', 'Rio de Janeiro', 'RJ'),
+('Aracaju', 'Sergipe', 'SE'),
+('Palmas', 'Tocantins', 'TO'),
+('São Salvador', 'Bahia', 'BA');
+
